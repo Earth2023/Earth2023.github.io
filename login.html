@@ -6,11 +6,9 @@
   <title>Earth2023个人网站用户登录</title>
   <script type="text/javascript">
     function dl() {
-        var a;
-        a = document.getElementById("username").value;
-        var b;
-        b = document.getElementById("password").value;
-        if (a === "administrator") (b === "administrator"); {
+        const a = document.getElementById("username").value;
+        const b = document.getElementById("password").value;
+        if (a == "administrator" && b == "administrator") {
             alert("True")
         }
     }

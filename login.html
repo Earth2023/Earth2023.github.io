@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <link href="logo.png" rel="shortcut icon" type="image/x-icon">
+  <title>Earth2023个人网站用户登录</title>
+  <script type="text/javascript">
+    function dl() {
+        var a;
+        a = document.getElementById("username").value;
+        var b;
+        b = document.getElementById("password").value;
+        if (a === "administrator") (b === "administrator"); {
+            alert("True")
+        }
+    }
+  </script>
+</head>
+<body>
+<style>
+    h1 {
+        text-align: center;
+    }
+    body {
+        background-color: #4dd4cf;
+    }
+    .aa1{
+        text-align: center;
+    }
+</style>
+<h1>Earth2023个人网站用户登录</h1>
+<hr>
+<div class="aa1">
+<form>
+  <label>
+    用户名（User name）：
+    <input type="text" id="username" value="">
+  </label>
+  <br>
+  <label>
+    密码（Password）：
+    <input type="password" id="password" value="">
+  </label>
+</form>
+<br>
+  <button onclick="dl()">开始验证</button>
+</div>
+</body>
+</html>

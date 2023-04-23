@@ -4,47 +4,76 @@
   <meta charset="UTF-8">
   <link href="logo.png" rel="shortcut icon" type="image/x-icon">
   <title>Earth2023个人网站用户登录</title>
-  <script type="text/javascript">
-    function dl() {
-        const a = document.getElementById("username").value;
-        const b = document.getElementById("password").value;
-        if (a == "administrator" && b == "administrator") {
-            alert("True")
-        }
-        else {
-            alert("False")
-        }
-    }
-  </script>
+  <script src="login_fucntion.js"></script>
 </head>
 <body>
 <style>
+    a {
+        text-decoration: none;
+    }
     h1 {
         text-align: center;
     }
     body {
         background-color: #4dd4cf;
     }
-    .aa1{
+    .aa1 {
         text-align: center;
+        color: black;
+    }
+    .Producer {
+        text-align: center;
+        color: black;
+    }
+    #y
+    {
+        color: black;
+    }
+    .button-dl {
+      color: white;
+      border-radius: 4px;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    }
+    .button-dl {
+      background: rgb(109, 184, 28); /* this is a green */
     }
 </style>
-<h1>Earth2023个人网站用户登录</h1>
+<div class="adas">
+  <span><strong><a class="aa1" href="https://earth2023.top/" target="_blank">Earth2023的个人网站</a></strong></span>
+  <br>
+  <br>
+  <span><strong><a class="aa1" href="https://earth2023.top/" target="_blank">Personal website for Earth2023</a></strong></span>
+  <br>
+  <br>
+  <span><strong>Earth2023的小仓库</strong></span>
+  <br>
+  <br>
+  <span><strong>Earth2023's small warehouse</strong></span>
+  <br>
+  <br>
+  <hr>
+</div>
+<h1><a class="aa1" href="https://earth2023.top/login.html" target="_blank">Earth2023个人网站用户登录</a></h1>
 <hr>
 <div class="aa1">
-<form>
-  <label>
-    用户名（User name）：
-    <input type="text" id="username" value="">
-  </label>
+  <form>
+    <label>
+      用户名（User name）：
+      <input type="text" id="username" value="">
+    </label>
+    <br>
+    <label>
+      密码（Password）：
+      <input type="password" id="password" value="">
+    </label>
+  </form>
   <br>
-  <label>
-    密码（Password）：
-    <input type="password" id="password" value="">
-  </label>
-</form>
-<br>
-  <button onclick="dl()">开始验证</button>
+  <button class="button-dl" onclick="dl()">开始验证</button>
+</div>
+<div class="Producer">
+  <p>©2023 By Earth2023</p>
+  <p>&nbsp;&nbsp;如有侵权，我们必究到底！</p>
+  <a id="y" href="https://icp.gov.moe/?keyword=20237717" target="_blank">萌ICP备20237717号</a>
 </div>
 </body>
 </html>

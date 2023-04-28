@@ -38,12 +38,48 @@
     .button-dl {
       background: rgb(109, 184, 28); /* this is a green */
     }
+    .aaa {
+      background: #ffffff;
+      /* 创建渐变 */
+      background-image: -webkit-linear-gradient(top, #4dd4cf, #04f124);
+      background-image: -moz-linear-gradient(top, #4dd4cf, #04f124);
+      background-image: -ms-linear-gradient(top, #4dd4cf, #04f124);
+      background-image: -o-linear-gradient(top, #4dd4cf, #04f124);
+      background-image: linear-gradient(to bottom, #4dd4cf, #04f124);
+      /* 给按钮添加圆角 */
+      -webkit-border-radius: 28;
+      -moz-border-radius: 28;
+      border-radius: 18px;
+      text-shadow: 3px 2px 1px #4dd4cf;
+      -webkit-box-shadow: 6px 5px 15px #ffffff;
+      -moz-box-shadow: 6px 5px 15px #ffffff;
+      box-shadow: 6px 5px 15px #ffffff;
+      font-family: "Adobe 宋体 Std L",serif;
+      color: #ffffff;
+      font-size: 27px;
+      padding: 19px;
+      text-decoration: none;
+    }
+    /* 悬停样式 */
+    .aaa:hover {
+      background: #ffffff;
+      background-image: -webkit-linear-gradient(top, #4dd4cf, #04f124);
+      background-image: -moz-linear-gradient(top, #4dd4cf, #04f124);
+      background-image: -ms-linear-gradient(top, #4dd4cf, #04f124);
+      background-image: -o-linear-gradient(top, #4dd4cf, #04f124);
+      background-image: linear-gradient(to bottom, #4dd4cf, #04f124);
+      text-decoration: none;
+    }
+
 </style>
 <div class="adas">
+  <div style="text-align: right">
+    <button class="aaa" onclick="window.open('https://bcjc.earth2023.top')">跳转编程教程</button>
+   </div>
   <span><strong><a class="aa1" href="https://earth2023.top/" target="_blank">Earth2023的个人网站</a></strong></span>
   <br>
   <br>
-  <span><strong><a class="aa1" href="https://earth2023.top/" target="_blank">Personal website for Earth2023</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当前时间：</strong><label id="time_Label"></label></span>
+  <span><strong><a class="aa1" href="https://earth2023.top/" target="_blank">Personal website for Earth2023</a></label>
   <br>
   <br>
   <span><strong>Earth2023的小仓库</strong></span>
@@ -52,6 +88,7 @@
   <span><strong>Earth2023's small warehouse</strong></span>
   <br>
   <br>
+  <label>当前时间：</strong><label id="time_Label"></label></label>
   <hr>
 </div>
 <h1><a class="aa1" href="https://earth2023.top/login.html" target="_blank">Earth2023个人网站用户登录</a></h1>

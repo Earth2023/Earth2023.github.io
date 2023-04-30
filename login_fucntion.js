@@ -1,13 +1,13 @@
 ﻿function dl() {
-        const a = document.getElementById("username").value;
-        const b = document.getElementById("password").value;
-        if (a == "administrator" && b == "administrator") {
+        const a = hex_md5(document.getElementById("username").value);
+        const b = hex_md5(document.getElementById("password").value);
+        if (a == "e04c3da731abdee912f54229fc322f5e" && b == "e04c3da731abdee912f54229fc322f5e") {
             alert("你好，管理员！")
         }
-        else if (a == "2ca688d20df46f23b682215bd2ccd7e59227e7594d6596c91ca835c095287fa6" && b == "2ca688d20df46f23b682215bd2ccd7e59227e7594d6596c91ca835c095287fa6") {
+        else if (a == "826167ec9d56522f4ea3289e3f279e73" && b == "826167ec9d56522f4ea3289e3f279e73") {
             alert("你好，Earth2023！")
         }
         else {
-            alert("用户，抱歉，不认识您。")
+            alert("您的密码或账号有误，请重新输入。")
         }
     }

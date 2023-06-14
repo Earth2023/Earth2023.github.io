@@ -1,10 +1,10 @@
 ﻿function dl() {
-        const a = hex_md5(document.getElementById("username").value);
-        const b = hex_md5(document.getElementById("password").value);
-        if (a == "e04c3da731abdee912f54229fc322f5e" && b == "e04c3da731abdee912f54229fc322f5e") {
+        const a = sha512(document.getElementById("username").value);
+        const b = sha512(document.getElementById("password").value);
+        if (a == "df09aec85d056853f2d9da9c8627db3507f39820594efe303980ac45339f80e2e1430f0f7e639635e7f6b12d185367a3938eaa7b0f2f84cbd857a7375617affc" && b == "df09aec85d056853f2d9da9c8627db3507f39820594efe303980ac45339f80e2e1430f0f7e639635e7f6b12d185367a3938eaa7b0f2f84cbd857a7375617affc") {
             alert("你好，管理员！")
         }
-        else if (a == "826167ec9d56522f4ea3289e3f279e73" && b == "826167ec9d56522f4ea3289e3f279e73") {
+        else if (a == "57f8810c2880a7ff0977cf37e8b664abe4ef36f523cf959f612e3356e794135902238865daee0a0140e845aae2ded173d51048798f91779a9613ffded26743fd" && b == "57f8810c2880a7ff0977cf37e8b664abe4ef36f523cf959f612e3356e794135902238865daee0a0140e845aae2ded173d51048798f91779a9613ffded26743fd") {
             alert("你好，Earth2023！")
         }
         else {

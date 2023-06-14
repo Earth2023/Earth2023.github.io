@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-cn">
 <head>
   <meta charset="UTF-8">
   <link href="logo.png" rel="shortcut icon" type="image/x-icon">
   <title>Earth2023个人网站</title>
-  <script src="https://earth2023.top/time.js"></script>
+  <script src="time.js"></script>
 </head>
 <body>
 <style>
@@ -66,7 +66,38 @@ h3 {
   background-image: linear-gradient(to bottom, #4dd4cf, #04f124);
   text-decoration: none;
 }
+.background{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  min-width: 1000px;
+  z-index:-10;
+  zoom: 1;
+  background-color: #fff;
+  background: url(https://api.likepoems.com/img/bing);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center 0;
+}
+.cishu {
+  text-align: center;
+}
+.content{
+  width:2000px;
+  height:40px;
+  vertical-align: middle;
+  display: table-cell;
+  text-align: center;
+}
+#mryy {
+  text-align: center;
+}
 </style>
+<div class="background"></div>
 <div class="adas">
   <div style="text-align: right">
     <button class="aaa" onclick="window.open('login.html')">跳转登录页</button>
@@ -82,6 +113,10 @@ h3 {
   <label><strong>当前时间：</strong><label id="time_Label"></label></label>
   <hr>
 </div>
+<div class="content">
+  <img alt="Earth2023" src="logo.png" class="img" height="300" width="300"/>
+  <h2 id="mryy"><h2>
+</div>
 <h1><a class="aa1" href="https://earth2023.top/" target="_blank">欢迎来到Earth2023的个人网站！</a></h1>
 <hr>
 <h3>哔哩哔哩：<a class="aa1" href="https://space.bilibili.com/604148020" target="_blank">https://space.bilibili.com/604148020</a></h3>
@@ -89,6 +124,11 @@ h3 {
 <h3>编程猫：<a class="aa1" href="https://shequ.codemao.cn/user/558283908" target="_blank">https://shequ.codemao.cn/user/558283908</a></h3>
 <h3>QQ：<a class="aa1" href="https://qm.qq.com/cgi-bin/qm/qr?k=rde6EnyuH-S4DSKXfOGrTrjez2PVVcPX&noverify=0&personal_qrcode_source=3" target="_blank">3331978959（点我添加为QQ好友）</a></h3>
 <h3>微信：<a class="aa1" href="https://vdse.bdstatic.com//192d9a98d782d9c74c96f09db9378d93.mp4?authorization=bce-auth-v1/40f207e648424f47b2e3dfbb1014b1a5/2021-07-12T02:14:24Z/-1/host/530146520a1c89fb727fbbdb8a0e0c98ec69955459aed4b1c8e00839187536c9" target="_blank">*****OS_earth（你被骗了）</a></h3>
+<hr>
+<div class="cishu">
+  <p>该网站访问次数：</p>
+  <!--img alt="访问次数" src="https://counter.likepoems.com/get/@:earth2023.top"-->
+</div>
 <hr>
 <div class="Producer">
   <p>©2023 By Earth2023</p>

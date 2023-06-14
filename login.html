@@ -5,11 +5,12 @@
   <link href="logo.png" rel="shortcut icon" type="image/x-icon">
   <title>Earth2023个人网站用户登录</title>
   <script src="login_fucntion.js"></script>
-  <script src="https://earth2023.top/time.js"></script>
-  <script src="https://earth2023.top/md5.js"></script>
+  <script src="time.js"></script>
+  <script src="sha512.js"></script>
 </head>
 <body>
 <style>
+    
     a {
         text-decoration: none;
     }
@@ -41,13 +42,11 @@
     }
     .aaa {
       background: #ffffff;
-      /* 创建渐变 */
       background-image: -webkit-linear-gradient(top, #4dd4cf, #04f124);
       background-image: -moz-linear-gradient(top, #4dd4cf, #04f124);
       background-image: -ms-linear-gradient(top, #4dd4cf, #04f124);
       background-image: -o-linear-gradient(top, #4dd4cf, #04f124);
       background-image: linear-gradient(to bottom, #4dd4cf, #04f124);
-      /* 给按钮添加圆角 */
       -webkit-border-radius: 28;
       -moz-border-radius: 28;
       border-radius: 18px;
@@ -61,7 +60,6 @@
       padding: 19px;
       text-decoration: none;
     }
-    /* 悬停样式 */
     .aaa:hover {
       background: #ffffff;
       background-image: -webkit-linear-gradient(top, #4dd4cf, #04f124);
@@ -71,8 +69,42 @@
       background-image: linear-gradient(to bottom, #4dd4cf, #04f124);
       text-decoration: none;
     }
+    #username{
+      width: 500px;
+      height: 50px;
+      line-height: 30px;
+      font-size: 30px;
+      padding-left: 30px;
+      border-radius: 50px;
+      background-color: gainsboro;
+      border: none;
+    }
+    #username:focus{
+      outline: none;
+      background-color: lightblue;
+    }	
+    #password{
+      width: 500px;
+      height: 50px;
+      line-height: 30px;
+      font-size: 30px;
+      padding-left: 30px;
+      border-radius: 50px;
+      background-color: gainsboro;
+      border: none;
+    }
+    #password:focus{
+      outline: none;
+      background-color: lightblue;
+    }
 
 </style>
+<script>  
+    function clear() {
+	document.getElementById("username").value = "";
+	document.getElementById("password").value = "";
+    }
+</script>
 <div class="adas">
   <div style="text-align: right">
     <button class="aaa" onclick="window.open('https://bcjc.earth2023.top')">跳转编程教程</button>
@@ -87,7 +119,7 @@
   <label><strong>当前时间：</strong><label id="time_Label"></label></label>
   <hr>
 </div>
-<h1><a class="aa1" href="https://earth2023.top/login.html" target="_blank">Earth2023个人网站用户登录</a></h1>
+<h1><a class="aa1" href="https://www.earth2023.top/login.html" target="_blank">Earth2023个人网站用户登录</a></h1>
 <hr>
 <div class="aa1">
   <form>
@@ -96,13 +128,14 @@
       <input type="text" id="username" value="">
     </label>
     <br>
+    <br>
     <label>
       密码（Password）：
       <input type="password" id="password" value="">
     </label>
   </form>
   <br>
-  <button class="button-dl" onclick="dl()">开始验证</button>
+  <button class="button-dl" onclick="dl(),clear()">开始验证</button>
 </div>
 <div class="Producer">
   <p>©2023 By Earth2023</p>

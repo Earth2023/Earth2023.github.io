@@ -12,9 +12,6 @@
 a {
     text-decoration: none;
 }
-body {
-	background-color: #4dd4cf;
-}
 h1 {
     color: black;
     text-align: center;
@@ -68,6 +65,7 @@ h3 {
   text-decoration: none;
 }
 .background{
+  filter: blur(10px);
   position:fixed;
   top: 0;
   left: 0;
@@ -88,13 +86,14 @@ h3 {
   text-align: center;
 }
 .content{
+  filter: blur(1px);
   width:2000px;
   height:40px;
   vertical-align: middle;
   display: table-cell;
   text-align: center;
 }
-#mryy {
+#hitokoto_text {
   text-align: center;
 }
 </style>
@@ -116,9 +115,8 @@ h3 {
 </div>
 <div class="content">
   <img alt="Earth2023" src="logo.png" class="img" height="300" width="300"/>
-  <p id="hitokoto">
-  <h2 id="hitokoto_text"></h2>
-</p>
+</div>
+<h2 id="hitokoto_text"></h2>
 <script>
   fetch('https://v1.hitokoto.cn')
     .then(response => response.json())
@@ -129,7 +127,6 @@ h3 {
     })
     .catch(console.error)
 </script>
-</div>
 <h1><a class="aa1" href="https://earth2023.top/" target="_blank">欢迎来到Earth2023的个人网站！</a></h1>
 <hr>
 <h3>哔哩哔哩：<a class="aa1" href="https://space.bilibili.com/604148020" target="_blank">https://space.bilibili.com/604148020</a></h3>
@@ -139,7 +136,7 @@ h3 {
 <h3>微信：<a class="aa1" href="https://vdse.bdstatic.com//192d9a98d782d9c74c96f09db9378d93.mp4?authorization=bce-auth-v1/40f207e648424f47b2e3dfbb1014b1a5/2021-07-12T02:14:24Z/-1/host/530146520a1c89fb727fbbdb8a0e0c98ec69955459aed4b1c8e00839187536c9" target="_blank">*****OS_earth（你被骗了）</a></h3>
 <hr>
 <div class="cishu">
-  <p>该网站访问次数：</p>
+  <h4>该网站访问次数：</h4>
   <img alt="访问次数" src="https://counter.likepoems.com/get/@:earth2023.top">
 </div>
 <hr>

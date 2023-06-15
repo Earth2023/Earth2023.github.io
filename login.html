@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link href="logo.png" rel="shortcut icon" type="image/x-icon">
-  <title>Earth2023个人网站用户登录</title>
+  <title></title>
   <script src="login_fucntion.js"></script>
   <script src="time.js"></script>
   <script src="sha512.js"></script>
@@ -16,9 +16,6 @@
     }
     h1 {
         text-align: center;
-    }
-    body {
-        background-color: #4dd4cf;
     }
     .aa1 {
         text-align: center;
@@ -97,29 +94,36 @@
       outline: none;
       background-color: lightblue;
     }
-.background{
-  position:fixed;
-  top: 0;
-  left: 0;
-  width:100%;
-  height:100%;
-  min-width: 1000px;
-  z-index:-10;
-  zoom: 1;
-  background-color: #fff;
-  background: url(https://api.likepoems.com/img/bing);
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-position: center 0;
-}
-.cishu {
-  text-align: center;
-}
-.g-recaptcha {
-  text-align: center;
-}
+    .background{
+      position:fixed;
+      top: 0;
+      left: 0;
+      width:100%;
+      height:100%;
+      min-width: 1000px;
+      z-index:-10;
+      zoom: 1;
+      background-color: #ffffff;
+      background: url(https://api.likepoems.com/img/bing);
+      background-repeat: no-repeat;
+      background-size: cover;
+      -webkit-background-size: cover;
+      -o-background-size: cover;
+      background-position: center 0;
+    }
+    .cishu {
+      text-align: center;
+    }
+    #rc-imageselect,.g-recaptcha {
+    display: inline; 
+    } 
+    #rc-imageselect {
+    max-width: 100%;
+    }
+    .g-recaptcha>div>div {
+    width: 100% ;
+    important; 78px；
+    }
 </style>
 <div class="background"></div>
 <div class="adas">
@@ -152,8 +156,8 @@
     </label>
   </form>
   <br>
-  <div id="robot"></div>
-  <script src="https://www.recaptcha.net/recaptcha/api.js?onload=onloadCallback&render=explicit&" async defer></script>
+  <center><div id="robot"></div></center>
+  <script src="https://www.recaptcha.net/recaptcha/api.js?onload=onloadCallback&render=explicit&hl=zh-CN" async defer></script>
   <button class="button-dl" onclick="getResponseFromRecaptcha()">开始验证</button>
 </div>
 <hr>

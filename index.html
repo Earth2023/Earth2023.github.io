@@ -5,6 +5,7 @@
   <link href="logo.png" rel="shortcut icon" type="image/x-icon">
   <title>Earth2023个人网站</title>
   <script src="time.js"></script>
+  <script src="title.js"></script>
 </head>
 <body>
 <style>
@@ -115,7 +116,19 @@ h3 {
 </div>
 <div class="content">
   <img alt="Earth2023" src="logo.png" class="img" height="300" width="300"/>
-  <h2 id="mryy"><h2>
+  <p id="hitokoto">
+  <h2 id="hitokoto_text"></h2>
+</p>
+<script>
+  fetch('https://v1.hitokoto.cn')
+    .then(response => response.json())
+    .then(data => {
+      const hitokoto = document.querySelector('#hitokoto_text')
+      hitokoto.href = `https://hitokoto.cn/?uuid=${data.uuid}`
+      hitokoto.innerText = "每日一语：" + data.hitokoto
+    })
+    .catch(console.error)
+</script>
 </div>
 <h1><a class="aa1" href="https://earth2023.top/" target="_blank">欢迎来到Earth2023的个人网站！</a></h1>
 <hr>

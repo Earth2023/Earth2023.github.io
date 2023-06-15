@@ -7,10 +7,10 @@
   <script src="login_fucntion.js"></script>
   <script src="time.js"></script>
   <script src="sha512.js"></script>
+  <script src="title.js"></script>
 </head>
 <body>
 <style>
-    
     a {
         text-decoration: none;
     }
@@ -117,6 +117,9 @@
 .cishu {
   text-align: center;
 }
+.g-recaptcha {
+  text-align: center;
+}
 </style>
 <div class="background"></div>
 <div class="adas">
@@ -149,7 +152,9 @@
     </label>
   </form>
   <br>
-  <button class="button-dl" onclick="dl()">开始验证</button>
+  <div id="robot"></div>
+  <script src="https://www.recaptcha.net/recaptcha/api.js?onload=onloadCallback&render=explicit&" async defer></script>
+  <button class="button-dl" onclick="getResponseFromRecaptcha()">开始验证</button>
 </div>
 <hr>
 <div class="cishu">

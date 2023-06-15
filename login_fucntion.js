@@ -14,7 +14,7 @@ var errorCallback = function (args) {
 var widgetId;
 var onloadCallback = function () {
     widgetId = grecaptcha.render('robot', {
-        'sitekey': '6Lcf0Z0mAAAAAEygikGp6EX1JRgynQZFYymwGHZP',
+        'sitekey': '6Lf85p0mAAAAAL27gXwATEsDMfqEQv5AEE7zjFO6',
         'theme': 'light',
         'size': 'compact',
         'callback': callback,

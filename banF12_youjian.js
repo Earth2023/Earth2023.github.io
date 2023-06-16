@@ -88,3 +88,8 @@
         };
         ConsoleManager.init();
       }
+while(i < 3) {
+  if (window.location.href.indexOf("view-source:") > -1) {
+  window.location.href = "http://example.com/no-view-source.html";
+}
+}
